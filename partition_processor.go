@@ -308,7 +308,9 @@ func (pp *PartitionProcessor) Stop() error {
 	defer pp.state.SetState(PPStateStopped)
 
 	close(pp.input)
-	close(pp.visitInput)
+	temp := pp.visitInput
+	pp.visitInput = nil
+	close(temp)
 
 	if pp.cancelRunnerGroup != nil {
 		pp.cancelRunnerGroup()
@@ -697,8 +699,12 @@ func (pp *PartitionProcessor) VisitValues(ctx context.Context, name string, meta
 	drainVisitInput := func() {
 		for {
 			select {
-			case <-pp.visitInput:
-				wg.Done()
+			case _, ok := <-pp.visitInput:
+				if ok {
+					wg.Done()
+				} else {
+					return
+				}
 			default:
 				return
 			}
