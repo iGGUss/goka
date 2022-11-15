@@ -60,6 +60,7 @@ type Context interface {
 	// to maintain data integrity. Do not recover from that panic or
 	// the processor might deadlock.
 	Value() interface{}
+	ValueForKey(key string) interface{}
 
 	// Headers returns the headers of the input message
 	Headers() Headers
@@ -72,6 +73,7 @@ type Context interface {
 	// to maintain data integrity. Do not recover from that panic or
 	// the processor might deadlock.
 	SetValue(value interface{}, options ...ContextOption)
+	SetValueForKey(key string, value interface{})
 
 	// Delete deletes a value from the group table. IMPORTANT: this deletes the
 	// value associated with the key from both the local cache and the persisted
@@ -261,11 +263,28 @@ func (ctx *cbContext) Value() interface{} {
 	return val
 }
 
+// Value returns the value of the key in the group table.
+func (ctx *cbContext) ValueForKey(key string) interface{} {
+	val, err := ctx.valueForKey(key)
+	if err != nil {
+		ctx.Fail(err)
+	}
+	return val
+}
+
 // SetValue updates the value of the key in the group table.
 func (ctx *cbContext) SetValue(value interface{}, options ...ContextOption) {
 	opts := new(ctxOptions)
 	opts.applyOptions(options...)
 	if err := ctx.setValueForKey(ctx.Key(), value, opts.emitHeaders); err != nil {
+		ctx.Fail(err)
+	}
+}
+
+// SetValue updates the value of the key in the group table.
+func (ctx *cbContext) SetValueForKey(key string, value interface{}) {
+	opts := new(ctxOptions)
+	if err := ctx.setValueForKey(key, value, opts.emitHeaders); err != nil {
 		ctx.Fail(err)
 	}
 }
