@@ -3,7 +3,7 @@ package messaging
 import (
 	"encoding/json"
 
-	"github.com/lovoo/goka"
+	"github.com/iGGUss/goka"
 )
 
 var (

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lovoo/goka/multierr"
+	"github.com/iGGUss/goka/multierr"
 	"github.com/stretchr/testify/require"
 )
 

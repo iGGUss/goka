@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka/codec"
+	"github.com/iGGUss/goka/storage"
 	"github.com/stretchr/testify/require"
 	"github.com/syndtr/goleveldb/leveldb"
 )

@@ -10,7 +10,7 @@ import (
 
 	"github.com/Shopify/sarama"
 	"github.com/hashicorp/go-multierror"
-	"github.com/lovoo/goka/multierr"
+	"github.com/iGGUss/goka/multierr"
 )
 
 const (

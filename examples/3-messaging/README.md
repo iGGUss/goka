@@ -502,4 +502,4 @@ Watch [this video](https://tech.lovoo.com/2017/06/16/bbuzz-17-anti-spam-and-mach
 for details.
 
 Note that tables have to be configured in Kafka with log compaction.
-For details check the [Wiki](https://github.com/lovoo/goka/wiki/Tips#configuring-log-compaction-for-table-topics).
+For details check the [Wiki](https://github.com/iGGUss/goka/wiki/Tips#configuring-log-compaction-for-table-topics).

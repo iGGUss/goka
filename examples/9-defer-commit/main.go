@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/multierr"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/codec"
+	"github.com/iGGUss/goka/multierr"
 )
 
 var (

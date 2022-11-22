@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka"
+	"github.com/iGGUss/goka"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,7 +1,7 @@
 package topicinit
 
 import (
-	"github.com/lovoo/goka"
+	"github.com/iGGUss/goka"
 	"log"
 )
 

@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka/storage"
 )
 
 var (

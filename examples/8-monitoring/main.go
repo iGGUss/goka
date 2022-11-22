@@ -16,13 +16,13 @@ import (
 
 	"github.com/Shopify/sarama"
 	"github.com/gorilla/mux"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/multierr"
-	"github.com/lovoo/goka/web/actions"
-	"github.com/lovoo/goka/web/index"
-	"github.com/lovoo/goka/web/monitor"
-	"github.com/lovoo/goka/web/query"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/codec"
+	"github.com/iGGUss/goka/multierr"
+	"github.com/iGGUss/goka/web/actions"
+	"github.com/iGGUss/goka/web/index"
+	"github.com/iGGUss/goka/web/monitor"
+	"github.com/iGGUss/goka/web/query"
 )
 
 var (

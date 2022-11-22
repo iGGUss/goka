@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lovoo/goka/codec"
+	"github.com/iGGUss/goka/codec"
 	"github.com/stretchr/testify/require"
 )
 

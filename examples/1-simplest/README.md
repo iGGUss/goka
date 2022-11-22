@@ -5,4 +5,4 @@ The application counts the clicks of a user in the processor's group table.
 
 Details are explained in the project's [readme].
 
-[readme]: https://github.com/lovoo/goka/blob/master/README.md
+[readme]: https://github.com/iGGUss/goka/blob/master/README.md

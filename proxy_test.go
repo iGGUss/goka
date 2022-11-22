@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka/storage"
 )
 
 type nullProxy struct{}

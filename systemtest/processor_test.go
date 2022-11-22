@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/multierr"
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/codec"
+	"github.com/iGGUss/goka/multierr"
+	"github.com/iGGUss/goka/storage"
 	"github.com/stretchr/testify/require"
 )
 

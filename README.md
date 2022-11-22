@@ -1,6 +1,6 @@
 # Goka 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![Unit Tests/System Tests](https://github.com/lovoo/goka/actions/workflows/main.yml/badge.svg)](https://github.com/lovoo/goka/actions/workflows/main.yml)
- [![GoDoc](https://godoc.org/github.com/lovoo/goka?status.svg)](https://godoc.org/github.com/lovoo/goka) [![Go Report Card](https://goreportcard.com/badge/github.com/lovoo/goka)](https://goreportcard.com/report/github.com/lovoo/goka)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![Unit Tests/System Tests](https://github.com/iGGUss/goka/actions/workflows/main.yml/badge.svg)](https://github.com/iGGUss/goka/actions/workflows/main.yml)
+ [![GoDoc](https://godoc.org/github.com/iGGUss/goka?status.svg)](https://godoc.org/github.com/iGGUss/goka) [![Go Report Card](https://goreportcard.com/badge/github.com/iGGUss/goka)](https://goreportcard.com/report/github.com/iGGUss/goka)
 
 Goka is a compact yet powerful distributed stream processing library for [Apache Kafka] written in Go. Goka aims to reduce the complexity of building highly scalable and highly available microservices.
 
@@ -32,13 +32,13 @@ Goka extends the concept of Kafka consumer groups by binding a state table to th
 This README provides a brief, high level overview of the ideas behind Goka.
 A more detailed introduction of the project can be found in this [blog post](https://lovoodotblog.wordpress.com/2017/05/23/goka/).
 
-Package API documentation is available at [GoDoc] and the [Wiki](https://github.com/lovoo/goka/wiki/Tips#configuring-log-compaction-for-table-topics) provides several tips for configuring, extending, and deploying Goka applications.
+Package API documentation is available at [GoDoc] and the [Wiki](https://github.com/iGGUss/goka/wiki/Tips#configuring-log-compaction-for-table-topics) provides several tips for configuring, extending, and deploying Goka applications.
 
 ## Installation
 
 You can install Goka by running the following command:
 
-``$ go get -u github.com/lovoo/goka``
+``$ go get -u github.com/iGGUss/goka``
 
 ## Configuration
 
@@ -83,7 +83,7 @@ Goka relies on Kafka for message passing, fault-tolerant state storage and workl
 
 * **Views** are local caches of a complete group table. Views provide read-only access to the group tables and can be used to provide external services for example through a gRPC interface.
 
-* **Local storage** keeps a local copy of the group table partitions to speedup recovery and reduce memory utilization. By default, the local storage uses [LevelDB](https://github.com/syndtr/goleveldb), but in-memory map and [Redis-based storage](https://github.com/lovoo/goka/tree/master/storage/redis) are also available.
+* **Local storage** keeps a local copy of the group table partitions to speedup recovery and reduce memory utilization. By default, the local storage uses [LevelDB](https://github.com/syndtr/goleveldb), but in-memory map and [Redis-based storage](https://github.com/iGGUss/goka/tree/master/storage/redis) are also available.
 
 
 ## Get Started
@@ -105,8 +105,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/codec"
 )
 
 var (
@@ -187,7 +187,7 @@ func main() {
 A very similar example is also in *1-simplest*. Just run `go run examples/1-simplest/main.go`.
 
 Note that tables have to be configured in Kafka with log compaction.
-For details check the [Wiki](https://github.com/lovoo/goka/wiki/Tips#configuring-log-compaction-for-table-topics).
+For details check the [Wiki](https://github.com/iGGUss/goka/wiki/Tips#configuring-log-compaction-for-table-topics).
 
 ## How to contribute
 
@@ -196,6 +196,6 @@ Please fork the repo, create a pull request against master, and be sure tests pa
 See the [GitHub Flow] for details.
 
 [Apache Kafka]: https://kafka.apache.org/
-[GoDoc]: https://godoc.org/github.com/lovoo/goka
-[examples]: https://github.com/lovoo/goka/tree/master/examples
+[GoDoc]: https://godoc.org/github.com/iGGUss/goka
+[examples]: https://github.com/iGGUss/goka/tree/master/examples
 [GitHub Flow]: https://guides.github.com/introduction/flow

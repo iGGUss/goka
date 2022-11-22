@@ -3,8 +3,8 @@ package blocker
 import (
 	"context"
 	"encoding/json"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/examples/3-messaging/topicinit"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/examples/3-messaging/topicinit"
 )
 
 var (

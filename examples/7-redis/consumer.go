@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/lovoo/goka"
-	storage "github.com/lovoo/goka/storage/redis"
+	"github.com/iGGUss/goka"
+	storage "github.com/iGGUss/goka/storage/redis"
 
 	redis "gopkg.in/redis.v5"
 )

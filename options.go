@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka/storage"
 )
 
 // UpdateContext defines the interface for UpdateCallback arguments.

@@ -1,7 +1,7 @@
 //go:generate go-bindata -pkg templates -o web/templates/bindata.go web/templates/...
-//go:generate mockgen -self_package github.com/lovoo/goka -package goka -destination mockstorage.go github.com/lovoo/goka/storage Storage
-//go:generate mockgen -self_package github.com/lovoo/goka -package goka -destination mocks.go github.com/lovoo/goka TopicManager,Producer,
-//go:generate mockgen -self_package github.com/lovoo/goka -package goka -destination mockssarama.go github.com/Shopify/sarama Client,ClusterAdmin
+//go:generate mockgen -self_package github.com/iGGUss/goka -package goka -destination mockstorage.go github.com/iGGUss/goka/storage Storage
+//go:generate mockgen -self_package github.com/iGGUss/goka -package goka -destination mocks.go github.com/iGGUss/goka TopicManager,Producer,
+//go:generate mockgen -self_package github.com/iGGUss/goka -package goka -destination mockssarama.go github.com/Shopify/sarama Client,ClusterAdmin
 
 /*
 Package goka is a stateful stream processing library for Apache Kafka (version 0.9+) that eases

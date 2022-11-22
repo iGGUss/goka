@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/web/templates"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/web/templates"
 
 	"net/http"
 

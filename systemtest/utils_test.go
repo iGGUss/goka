@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/storage"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/storage"
 )
 
 // polls all pollers until all return true or fails the test when secTimeout has passed.

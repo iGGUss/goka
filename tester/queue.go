@@ -3,7 +3,7 @@ package tester
 import (
 	"sync"
 
-	"github.com/lovoo/goka"
+	"github.com/iGGUss/goka"
 )
 
 type message struct {

@@ -41,6 +41,6 @@ jobs:
       - name: Test
         shell: bash
         run: |
-          GOKA_SYSTEMTEST=y go test -v github.com/lovoo/goka/systemtest
+          GOKA_SYSTEMTEST=y go test -v github.com/iGGUss/goka/systemtest
 
           

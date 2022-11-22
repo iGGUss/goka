@@ -2,11 +2,11 @@ package filter
 
 import (
 	"context"
-	"github.com/lovoo/goka"
-	messaging "github.com/lovoo/goka/examples/3-messaging"
-	"github.com/lovoo/goka/examples/3-messaging/blocker"
-	"github.com/lovoo/goka/examples/3-messaging/topicinit"
-	"github.com/lovoo/goka/examples/3-messaging/translator"
+	"github.com/iGGUss/goka"
+	messaging "github.com/iGGUss/goka/examples/3-messaging"
+	"github.com/iGGUss/goka/examples/3-messaging/blocker"
+	"github.com/iGGUss/goka/examples/3-messaging/topicinit"
+	"github.com/iGGUss/goka/examples/3-messaging/translator"
 	"strings"
 )
 

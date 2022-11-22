@@ -13,7 +13,7 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/lovoo/goka/codec"
+	"github.com/iGGUss/goka/codec"
 )
 
 func newEmitter(err error, done func(err error)) emitter {

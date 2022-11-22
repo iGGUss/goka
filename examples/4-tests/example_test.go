@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/tester"
+	"github.com/iGGUss/goka"
+	"github.com/iGGUss/goka/codec"
+	"github.com/iGGUss/goka/tester"
 	"github.com/stretchr/testify/require"
 )
 

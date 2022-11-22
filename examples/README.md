@@ -21,7 +21,7 @@ This is a very simple toy application that demonstrates how to
  * use a Processor
  * run a View to print the group table's values
 
- [Example](https://github.com/lovoo/goka/tree/master/examples/1-simplest/)
+ [Example](https://github.com/iGGUss/goka/tree/master/examples/1-simplest/)
 
 ### Clicks
 Similar to the first example, Emitter, Processor and View are demonstrated here.
@@ -30,31 +30,31 @@ In Addition it shows how to
 * access the View using a web endpoint
 * use a Codecs
 
-[Example](https://github.com/lovoo/goka/tree/master/examples/2-clicks/)
+[Example](https://github.com/iGGUss/goka/tree/master/examples/2-clicks/)
 
 ### More complex examples
 The following examples show the combination of multiple processors, views, etc.
 
-[Messaging Example](https://github.com/lovoo/goka/tree/master/examples/3-messaging/)
+[Messaging Example](https://github.com/iGGUss/goka/tree/master/examples/3-messaging/)
 
 By generating a random folder for storage, this example can be executed in parallel multiple times to get a feeling for the rebalancing that's happening under the hood.
 
-[Example]https://github.com/lovoo/goka/tree/master/examples/5-multiple/)
+[Example]https://github.com/iGGUss/goka/tree/master/examples/5-multiple/)
 
 
 ###  Monitoring
 Shows how to use the monitoring- and query-interface of goka.
 
-[Example](https://github.com/lovoo/goka/tree/master/examples/8-monitoring)
+[Example](https://github.com/iGGUss/goka/tree/master/examples/8-monitoring)
 
 
 ###  Testing
 Shows how to (unit-)test programs using goka.
 
-[Example](https://github.com/lovoo/goka/tree/master/examples/4-tests)
+[Example](https://github.com/iGGUss/goka/tree/master/examples/4-tests)
 
 ### DeferCommit
 
 Demonstrates the rather new context function to defer (postpone) the commit of a callback.
 
-[Example](https://github.com/lovoo/goka/tree/master/examples/9-defer-commit)
+[Example](https://github.com/iGGUss/goka/tree/master/examples/9-defer-commit)
